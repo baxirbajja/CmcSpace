@@ -1,0 +1,157 @@
+.container {
+  height: 100%;
+}
+
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #5bc0f8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #4ba3db;
+}
+
+.spacesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.spaceCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.spaceCard:hover {
+  transform: translateY(-4px);
+}
+
+.imageContainer {
+  position: relative;
+  height: 200px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.active {
+  background-color: #4ade80;
+  color: white;
+}
+
+.maintenance {
+  background-color: #fb923c;
+  color: white;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.content h2 {
+  color: #002b5b;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: #002b5b;
+  font-size: 0.9rem;
+}
+
+.details span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.statusButton,
+.deleteButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.editButton {
+  background-color: #5bc0f8;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #4ba3db;
+}
+
+.statusButton {
+  background-color: #f5f5f5;
+  color: #002b5b;
+}
+
+.statusButton:hover {
+  background-color: #e5e5e5;
+}
+
+.deleteButton {
+  background-color: #ef4444;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #dc2626;
+}

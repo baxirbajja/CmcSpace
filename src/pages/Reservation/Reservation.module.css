@@ -1,0 +1,225 @@
+.container {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff731d;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.contact span {
+  color: #ff6b35;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.main {
+  padding: 2rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-family: "Boldonse", "Poppins", system-ui, sans-serif;
+}
+
+.reserver {
+  color: #002b5b;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Boldonse", "Poppins", system-ui, sans-serif;
+}
+
+.espace {
+  color: #ff731d;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Boldonse", "Poppins", system-ui, sans-serif;
+}
+
+.formContainer {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.formLeft,
+.formRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #5bc0f8;
+}
+
+.formGroup h2 {
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #002b5b;
+}
+
+.datePickerContainer {
+  margin-bottom: 2rem;
+}
+
+.datePickerContainer label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.datePicker {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.timeSlots {
+  margin-bottom: 2rem;
+}
+
+.timeSlots label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.timeSlotsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.timeSlot {
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.timeSlot:hover {
+  border-color: #5bc0f8;
+}
+
+.timeSlot.selected {
+  background-color: #5bc0f8;
+  border-color: #5bc0f8;
+  color: white;
+}
+
+.successMessage {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.submitBtn {
+  background-color: #5bc0f8;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: #4ba3db;
+  transform: translateY(-2px);
+}

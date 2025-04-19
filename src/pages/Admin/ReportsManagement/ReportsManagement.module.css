@@ -1,0 +1,453 @@
+.container {
+  padding: 2rem;
+}
+
+.sectionTitle {
+  color: #002b5b;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sectionTitle i {
+  color: #ff731d;
+}
+
+/* Section des statistiques */
+.statsSection {
+  margin-bottom: 3rem;
+}
+
+.yearSelector {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.summaryCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summaryCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.summaryIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #002b5b;
+}
+
+.summaryInfo h3 {
+  font-size: 1.75rem;
+  color: #002b5b;
+  margin: 0;
+}
+
+.summaryInfo p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.approvedCard .summaryIcon {
+  background-color: #e7f5e7;
+  color: #28a745;
+}
+
+.pendingCard .summaryIcon {
+  background-color: #fff8e7;
+  color: #ffc107;
+}
+
+.declinedCard .summaryIcon {
+  background-color: #ffebeb;
+  color: #dc3545;
+}
+
+/* Graphique à barres */
+.chartContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chartTitle {
+  color: #002b5b;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.barChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 250px;
+  gap: 0.5rem;
+}
+
+.barGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 100%;
+  background-color: #5bc0f8;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  min-height: 4px;
+  transition: height 0.3s ease;
+}
+
+.barValue {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.barLabel {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+/* Statistiques par espace */
+.spaceStatsContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.spaceStatsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.spaceStatItem {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.spaceStatItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.spaceStatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.spaceStatHeader h4 {
+  margin: 0;
+  color: #002b5b;
+  font-size: 1rem;
+}
+
+.spaceStatTotal {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.spaceStatBar {
+  height: 12px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.spaceStatApproved {
+  height: 100%;
+  background-color: #28a745;
+}
+
+.spaceStatPending {
+  height: 100%;
+  background-color: #ffc107;
+}
+
+.spaceStatDeclined {
+  height: 100%;
+  background-color: #dc3545;
+}
+
+.spaceStatLegend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.legendApproved,
+.legendPending,
+.legendDeclined {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.legendApproved {
+  background-color: #28a745;
+}
+
+.legendPending {
+  background-color: #ffc107;
+}
+
+.legendDeclined {
+  background-color: #dc3545;
+}
+
+/* Section détaillée */
+.detailedSection {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filterForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterGroup label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.dateInput {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.filterButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #002b5b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.filterButton:hover {
+  background-color: #001f43;
+}
+
+.loading,
+.error,
+.noData {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.dateGroup {
+  margin-bottom: 2rem;
+}
+
+.dateTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #002b5b;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.dateTitle i {
+  color: #5bc0f8;
+}
+
+.reservationCount {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.reservationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.reservationCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.reservationHeader {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservationTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #002b5b;
+}
+
+.reservationStatus {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.approved {
+  background-color: #e7f5e7;
+  color: #28a745;
+}
+
+.pending {
+  background-color: #fff8e7;
+  color: #ffc107;
+}
+
+.declined {
+  background-color: #ffebeb;
+  color: #dc3545;
+}
+
+.reservationDetails {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.reservationDetail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.reservationDetail i {
+  color: #5bc0f8;
+  width: 20px;
+}
+
+.reservationDescription {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.reservationDescription h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #002b5b;
+}
+
+.reservationDescription p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summaryCards {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .reservationsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filterForm {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .summaryCards {
+    grid-template-columns: 1fr;
+  }
+  
+  .barChart {
+    height: 200px;
+  }
+}

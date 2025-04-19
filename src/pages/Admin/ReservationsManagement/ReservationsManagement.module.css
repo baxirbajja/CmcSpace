@@ -1,0 +1,247 @@
+.container {
+  padding: 2rem;
+}
+
+.filters {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.searchBar i {
+  color: #666;
+}
+
+.statusFilters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filterBtn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  background-color: #f5f5f5;
+}
+
+.filterBtn.active {
+  background-color: #002b5b;
+  color: white;
+}
+
+.dateGroup {
+  margin-bottom: 2rem;
+}
+
+.dateTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #002b5b;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dateTitle i {
+  color: #5bc0f8;
+}
+
+.reservationCount {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.reservationsGrid {
+ display:flex;
+ flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.reservationCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  min-width: fit-content;
+}
+
+.reservationCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader h3 {
+  color: #002b5b;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.declined {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.info i {
+  color: #5bc0f8;
+  width: 16px;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  grid-column: span 2;
+}
+label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.approveBtn {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.approveBtn:hover {
+  background-color: #c3e6cb;
+}
+
+.declineBtn {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.declineBtn:hover {
+  background-color: #f5c6cb;
+}
+
+.resetBtn {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.resetBtn:hover {
+  background-color: #d6d8db;
+}
+
+.deleteBtn {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.deleteBtn:hover {
+  background-color: #f5c6cb;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .reservationsGrid {
+    grid-template-columns: 1fr;
+  }
+}

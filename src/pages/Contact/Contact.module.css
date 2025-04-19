@@ -1,0 +1,226 @@
+.container {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff731d;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.contact span {
+  color: #ff6b35;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+h1 span {
+  font-family: "Boldonse", "Poppins", system-ui, sans-serif;
+  font-size: 3rem;
+}
+.main {
+  padding: 2rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-family: "Boldonse", "Poppins", system-ui, sans-serif;
+}
+
+.contactez {
+  color: #002b5b;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.nous {
+  color: #ff731d;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contactInfo {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactInfo h2 {
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+  color: #002b5b;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.infoItem i {
+  color: #ff731d;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.infoItem h3 {
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+  color: #002b5b;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoItem p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.contactForm {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+  color: #002b5b;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #5bc0f8;
+}
+
+.submitBtn {
+  background-color: #5bc0f8;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: #4ba3db;
+  transform: translateY(-2px);
+}
+
+.map {
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .main {
+    padding: 2rem;
+  }
+
+  .title {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contactez,
+  .nous {
+    font-size: 2.5rem;
+  }
+}
